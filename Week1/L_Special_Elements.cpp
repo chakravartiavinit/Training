@@ -126,7 +126,7 @@ int main()
         int n;
         cin >> n;
         vector<long long> vt(n);
-        map<long long, long long> mp;
+        unordered_map<long long, long long> mp;
         long long Max = 0;
         for (int i = 0; i < n; ++i)
         {
@@ -136,7 +136,7 @@ int main()
         }
         long long final_answer = 0;
         int last_index = 0, index = 0;
-        set<long long> answer;
+        unordered_set<long long> answer;
         for (int i = 0; i < n; ++i)
         {
             long long temp_sum = vt[i];
